@@ -3,13 +3,13 @@
 pragma solidity ^0.8.0;
 
 //import "hardhat/console.sol";
-import "@uniswap/lib/contracts/libraries/TransferHelper.sol";
-import "@openzeppelin/contracts/utils/math/SafeMath.sol";
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "./TransferHelper.sol";
+import "./SafeMath.sol";
+import "./IERC20.sol";
 import "./ICore.sol";
 import "./IAzuroBet.sol";
-import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
+import "./OwnableUpgradeable.sol";
+import "./ERC20Upgradeable.sol";
 import "./AzuroErrors.sol";
 
 contract LP is ERC20Upgradeable, OwnableUpgradeable {
